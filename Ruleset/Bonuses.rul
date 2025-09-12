@@ -1,0 +1,20 @@
+#DONE
+soldierBonuses:
+  - name: STR_NEKO_HERO_ANNA_PUMA_BONUS
+    stats:
+      psiSkill: 5
+    recovery:
+      energy:
+        flatOne: 1
+      stun:
+        flatOne: 1
+      morale:
+        flatOne: 2
+  - name: STR_NEKO_HERO_UNI_PUMA_BONUS
+    visibilityAtDark: 3
+    stats:
+      firing: 5
+      reactions: 5
+    recovery:
+      health:
+        fatalWounds: 0.5

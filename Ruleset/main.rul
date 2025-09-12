@@ -1,0 +1,175 @@
+#this file has content from Piratez.rul related to Puma Sisters
+# items:
+#   - type: STR_NEKO_UNIPUMA
+#     categories: [STR_BAT_CAT_ARMORS]
+#     supportedInventorySections: &InventorySectionsStandard
+#       - STR_RIGHT_HAND
+#       - STR_LEFT_HAND
+#       - STR_BELT
+#       - STR_RIGHT_LEG
+#       - STR_LEFT_LEG
+#       - STR_RIGHT_SHOULDER
+#       - STR_LEFT_SHOULDER
+#       - STR_BACK_PACK
+#       - STR_QD_SLOT
+#     size: 0.3
+#     costSell: 400000
+#     bigSprite: 3765
+#     floorSprite: 712
+#     weight: 3
+#     costThrow:
+#       energy: 20
+#       time: 40
+#     invWidth: 2
+#     invHeight: 2
+#     armor: 50
+#     listOrder: 8060
+#   - type: STR_CORPSE_NEKO_UNIPUMA
+#     name: STR_CORPSE_NEKO
+#     supportedInventorySections: *InventorySectionsStandard
+#     weight: 38
+#     bigSprite: 4060
+#     floorSprite: 4060
+#     costThrow:
+#       energy: 20
+#       time: 40
+#     invWidth: 2
+#     invHeight: 3
+#     armor: 40
+#     battleType: 11
+# armors:
+#   - type: STR_NEKO_UNIPUMA_UC
+#     #xneko_060.pck is present in N13
+#     spriteSheet: XNEKO_060.PCK
+#     customArmorPreviewIndex: 262
+#     spriteFaceGroup: 1
+#     spriteFaceColor: [178, 178, 178, 178, 178, 178, 84, 243, 178, 178, 145, 178, 178, 84, 84, 117, 178, 178, 178, 178, 84, 178, 117, 84, 178, 178, 178, 178, 180, 85, 84, 85, 178, 176, 178, 178, 178, 82, 84, 85, 178, 178, 178, 178, 84, 177, 229, 115]
+#     spriteHairGroup: 9
+#     spriteHairColor: [21, 36, 151, 246, 10, 170, 228, 243, 166, 246, 99, 228, 36, 9, 121, 9, 90, 9, 9, 83, 39, 120, 88, 233, 224, 226, 54, 247, 42, 39, 99, 18, 129, 38, 97, 81, 104, 246, 42, 18, 19, 242, 17, 37, 106, 87, 246, 84]
+#     corpseBattle:
+#       - STR_CORPSE_NEKO_UNIPUMA
+#     corpseGeo: STR_STEALTHSUIT_CORPSE
+#     storeItem: STR_NEKO_UNIPUMA
+#     weight: 3
+#     personalLight: 0
+#     stats:
+#        reactions: 30
+#        melee: 10
+#     visibilityAtDark: 16
+#     antiCamouflageAtDay: 2
+#     antiCamouflageAtDark: 2
+#     camouflageAtDay: 5
+#     camouflageAtDark: 5
+#     frontArmor: 7
+#     sideArmor: 7
+#     rearArmor: 7
+#     underArmor: 7
+#     meleeDodge:
+#       reactions: 0.4
+#       melee: 0.1
+#       bravery: 0.2
+#     meleeDodgeBackPenalty: 0.5
+#     recovery:
+#       time:
+#         tu: 0.5
+#         manaNormalized: 150.0
+#       mana:
+#         moraleCurrent: -0.014
+#       energy: *EnergyRegen180
+#       morale:
+#         flatHundred: -0.1
+#         manaNormalized: 14.0
+#       stun:
+#         healthCurrent: 0.045
+#         health: -0.08
+#         stunCurrent: 0.036
+#         manaNormalized: 9.0
+#       health:
+#         stunNormalized: -0.165
+#     psiDefence: *PsiDefNeko
+#     damageModifier:
+#       - 0.4
+#       - 1.0
+#       - 1.0
+#       - 1.0
+#       - 1.0
+#       - 1.0
+#       - 1.0
+#       - 0.7
+#       - 1.0
+#       - 5.0
+#       - 0.0
+#       - 1.0
+#       - 1.2
+#       - 0.2
+#       - 0.7
+#       - 0.7
+#       - 1.0
+#       - 0.75
+#       - 1.5
+#     specialWeapon: STR_NEKO_CLAWS
+#     builtInWeapons:
+#       - INV_NULL_1X1_LS
+#       - INV_NULL_1X1_RS
+#       - INV_NULL_2X3
+#       - INV_BELT_C_2X1
+#     units: *SoldiersNekoAll
+#     loftempsSet: [ 2 ]
+research:
+  - name: STR_PUMA_SISTERS_PREQ
+    points: 50
+    needItem: true
+  - name: STR_NEKO_UNIPUMA
+    cost: 30
+    points: 50
+    needItem: true
+  - name: STR_NEKO_HERO_ANNA_PUMA
+    points: 200
+    needItem: true
+  - name: STR_NEKO_HERO_UNI_PUMA
+    points: 200
+    needItem: true
+#removed manufacture from smugglers' box (STR_LOOTBOX_SMUGGLER) or mrshan etc
+ufopaedia:
+  - id: STR_NEKO_UNIPUMA_UC
+    type_id: 5
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_NEKO_UNIPUMA
+    text: STR_NEKO_UNIPUMA_UC_UFOPEDIA
+    listOrder: 8060
+  - id: STR_NEKO_STS_UC
+    type_id: 5
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    requires:
+      - STR_NEKO_STS
+    text: STR_NEKO_STS_UC_UFOPEDIA
+    listOrder: 8061
+  - id: STR_NEKO_HERO_ANNA_PUMA
+    type_id: 7
+    section: STR_LORE_UC
+    requires:
+      - STR_NEKO_HERO_ANNA_PUMA
+    image_id: PIC_ANNA_PUMA_CPAL
+    text: STR_NEKO_HERO_ANNA_PUMA_UFOPEDIA
+    text_width: 158
+  - id: STR_NEKO_HERO_UNI_PUMA
+    type_id: 7
+    section: STR_LORE_UC
+    requires:
+      - STR_NEKO_HERO_UNI_PUMA
+    image_id: PIC_UNI_PUMA_CPAL
+    text: STR_NEKO_HERO_UNI_PUMA_UFOPEDIA
+    text_width: 158
+  #what is that STR_CATGIRL_VICTIM_RECRUITMENT ?
+  #- id: STR_CATGIRL_VICTIM_RECRUITMENT
+  #  type_id: 7
+  #  section: STR_HEAVY_WEAPONS_PLATFORMS
+  #  requires:
+  #    - STR_CATGIRL_VICTIM
+  #  image_id: PUMA_NEKO
+  #  text: STR_CATGIRL_VICTIM_RECRUITMENT_UFOPEDIA
+  #  text_width: 160
+  #  listOrder: 8000
+    
+

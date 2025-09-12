@@ -1,0 +1,197 @@
+events:
+  - name: STR_PUMA_SISTERS_PREQ_EVENT
+    description: STR_PUMA_SISTERS_PREQ_EVENT_DESCRIPTION
+    background: ANNAUNI_BACKGROUND.SCR
+    music: DTPDANCE
+    researchList: [STR_PUMA_SISTERS_PREQ]
+    timer: 60
+    timerRandom: 43400
+  - name: STR_ANNA_PUMA_EVENT
+    description: STR_ANNA_PUMA_EVENT_DESCRIPTION
+    background: ANNAUNI_BACKGROUND.SCR
+    music: DTPDANCE
+    spawnedPersonType: STR_SOLDIER_NEKOMIMI
+    spawnedPersons: 1
+    spawnedPersonName: Anna Puma
+    spawnedSoldier:
+        nationality: 0
+        initialStats:
+          tu: 79
+          stamina: 87
+          health: 34
+          bravery: 80
+          reactions: 85
+          firing: 76
+          throwing: 53
+          strength: 22
+          psiStrength: 72
+          psiSkill: 0
+          melee: 89
+          mana: 46
+        currentStats:
+          tu: 120
+          stamina: 120
+          health: 45
+          bravery: 100
+          reactions: 125
+          firing: 140
+          throwing: 100
+          strength: 40
+          psiStrength: 72
+          psiSkill: 0
+          melee: 140
+          mana: 90
+        gender: 0
+        look: 0
+        lookVariant: 0
+        rank: 1
+        armor: STR_NEKO_UNIPUMA_UC
+        diary:
+          commendations:
+            - commendationName: STR_NEKO_CLASS_OUTLAW
+              noun: NoNoun
+              decorationLevel: 9
+            - commendationName: STR_NEKO_HERO_ANNA_PUMA
+              noun: NoNoun
+              decorationLevel: 3
+    everyMultiItemList:
+      STR_BRIEFCASE: 1
+      STR_EXAMINATION_ROOM: 1
+      STR_LOOTBOX_SUPPLIES: 1
+      STR_IGUN: 2
+      STR_IGUN_CLIP: 19
+      STR_CAT_PAWS: 1
+      STR_WP_GRENADE: 4
+      STR_GOVT_FINE: 1
+    researchList: [STR_SOLDIER_TYPE_NEKOMIMI_PREQ]
+    points: 200
+    timer: 12240
+  - name: STR_UNI_PUMA_EVENT
+    description: STR_UNI_PUMA_EVENT_DESCRIPTION
+    background: ANNAUNI_BACKGROUND.SCR
+    music: DTPDANCE
+    spawnedPersonType: STR_SOLDIER_NEKOMIMI
+    spawnedPersons: 1
+    spawnedPersonName: Uni Puma
+    spawnedSoldier:
+        nationality: 0
+        initialStats:
+          tu: 82
+          stamina: 77
+          health: 34
+          bravery: 60
+          reactions: 92
+          firing: 71
+          throwing: 64
+          strength: 31
+          psiStrength: 55
+          psiSkill: 0
+          melee: 89
+          mana: 59
+        currentStats:
+          tu: 120
+          stamina: 120
+          health: 45
+          bravery: 100
+          reactions: 125
+          firing: 140
+          throwing: 100
+          strength: 40
+          psiStrength: 55
+          psiSkill: 0
+          melee: 140
+          mana: 90
+        gender: 0
+        look: 0
+        lookVariant: 0
+        rank: 1
+        armor: STR_NEKO_UNIPUMA_UC
+        diary:
+          commendations:
+            - commendationName: STR_NEKO_CLASS_OUTLAW
+              noun: NoNoun
+              decorationLevel: 9
+            - commendationName: STR_NEKO_HERO_UNI_PUMA
+              noun: NoNoun
+              decorationLevel: 3
+    everyMultiItemList:
+      STR_NEKO_PEACEMAKER_GEAR: 1
+      STR_ILLEGAL_DATA: 1
+      STR_LOOTBOX_SMUGGLER: 1
+      STR_HYDRA_LASER: 1
+      STR_HYDRA_LASER_CLIP: 6
+      STR_SSRL: 1
+      STR_SLICER: 1
+      STR_GOVT_FINE: 1
+    researchList: [STR_VIP_021]
+    points: 200
+    timer: 12330
+eventScripts:
+  - type: STR_PUMA_SISTERS_PREQ_EVENT
+    oneTimeRandomEvents:
+      STR_PUMA_SISTERS_PREQ_EVENT: 100
+    firstMonth: 0
+    minDifficulty: 1
+    researchTriggers:
+      #STR_NEKO_HERO_ANNA_PUMA: true
+      #STR_NEKO_HERO_UNI_PUMA: true
+      STR_VIP_021: true
+      STR_CAPTAINS_RANK_04: true
+      STR_BOUNTY_HUNTING_CHALLENGE_DONE: true
+      STR_BOUNTY_HUNTING_CHALLENGE_NONE_CHOSEN: false
+      STR_PUMA_SISTERS_PREQ: false
+      STR_CAT_PATH: false
+    executionOdds: 23
+  - type: STR_PUMA_SISTERS_PREQ_EVENT_CATPATH
+    oneTimeRandomEvents:
+      STR_PUMA_SISTERS_PREQ_EVENT: 100
+    firstMonth: 0
+    minDifficulty: 1
+    researchTriggers:
+      #STR_NEKO_HERO_ANNA_PUMA: true
+      #STR_NEKO_HERO_UNI_PUMA: true
+      STR_VIP_021: true
+      STR_CAPTAINS_RANK_04: true
+      STR_BOUNTY_HUNTING_CHALLENGE_DONE: true
+      STR_BOUNTY_HUNTING_CHALLENGE_NONE_CHOSEN: false
+      STR_PUMA_SISTERS_PREQ: false
+      STR_CAT_PATH: true
+    executionOdds: 70
+  - type: STR_ANNA_PUMA_NORMAL
+    oneTimeRandomEvents:
+      STR_ANNA_PUMA_EVENT: 100
+    firstMonth: 0
+    minDifficulty: 1
+    maxDifficulty: 3
+    researchTriggers:
+      STR_PUMA_SISTERS_PREQ: true
+      STR_CAPTAINS_RANK_07: true
+    executionOdds: 23
+  - type: STR_UNI_PUMA_NORMAL
+    oneTimeRandomEvents:
+      STR_UNI_PUMA_EVENT: 100
+    firstMonth: 0
+    minDifficulty: 1
+    maxDifficulty: 3
+    researchTriggers:
+      STR_PUMA_SISTERS_PREQ: true
+      STR_CAPTAINS_RANK_07: true
+    executionOdds: 100
+  - type: STR_ANNA_PUMA_HARD
+    oneTimeRandomEvents:
+      STR_ANNA_PUMA_EVENT: 100
+    firstMonth: 0
+    minDifficulty: 4
+    researchTriggers:
+      STR_PUMA_SISTERS_PREQ: true
+      STR_CAPTAINS_RANK_08: true
+    executionOdds: 100
+  - type: STR_UNI_PUMA_HARD
+    oneTimeRandomEvents:
+      STR_UNI_PUMA_EVENT: 100
+    firstMonth: 0
+    minDifficulty: 4
+    researchTriggers:
+      STR_PUMA_SISTERS_PREQ: true
+      STR_CAPTAINS_RANK_08: true
+    executionOdds: 100

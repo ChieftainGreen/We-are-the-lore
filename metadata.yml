@@ -1,0 +1,8 @@
+name: "We are the lore"
+version: "0.3" 
+description: "Puma sisters"
+author: "IP"
+id: pumasisters
+master: piratez
+resourceConfig: Ruleset/main.rul
+requiredExtendedVersion: "7.13"

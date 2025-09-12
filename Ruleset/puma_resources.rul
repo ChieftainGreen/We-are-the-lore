@@ -1,0 +1,12 @@
+#DONE
+extraSprites:
+  - typeSingle: BIG_VIP_021
+    fileSingle: Resources/Pedia/Pumas.png
+  - typeSingle: PUMA_NEKO
+    fileSingle: Resources/Pedia/Catgirl_Victim.png
+  - typeSingle: PIC_ANNA_PUMA_CPAL
+    fileSingle: Resources/Awards/ANNA_PUMA.png
+  - typeSingle: PIC_UNI_PUMA_CPAL
+    fileSingle: Resources/Awards/UNI_PUMA.png
+  - typeSingle: ANNAUNI_BACKGROUND.SCR
+    fileSingle: Resources/Backgrounds/Puma_sisters.png

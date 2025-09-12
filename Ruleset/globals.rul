@@ -1,0 +1,13 @@
+commendations:
+  - type: STR_NEKO_HERO_ANNA_PUMA
+    description: STR_NEKO_HERO_ANNA_PUMA_DESCRIPTION
+    soldierBonusTypes: [STR_NEKO_HERO_ANNA_PUMA_BONUS]
+    sprite: 0
+    criteria:
+      totalIronMan: [9999]
+  - type: STR_NEKO_HERO_UNI_PUMA
+    description: STR_NEKO_HERO_UNI_PUMA_DESCRIPTION
+    soldierBonusTypes: [STR_NEKO_HERO_UNI_PUMA_BONUS]
+    sprite: 0
+    criteria:
+      totalIronMan: [9999]
