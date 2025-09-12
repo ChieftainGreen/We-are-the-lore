@@ -166,7 +166,7 @@ eventScripts:
     researchTriggers:
       STR_PUMA_SISTERS_PREQ: true
       STR_CAPTAINS_RANK_07: true
-    executionOdds: 23
+    executionOdds: 100
   - type: STR_UNI_PUMA_NORMAL
     oneTimeRandomEvents:
       STR_UNI_PUMA_EVENT: 100
