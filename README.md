@@ -1,4 +1,4 @@
-# We Are the Lore: Puma Sisters back!
+# We Are the Lore: Puma Sisters!
 
 ![Puma Sisters](kdpv.webp "Puma Sisters")
 
